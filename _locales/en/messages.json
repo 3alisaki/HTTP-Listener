@@ -1,0 +1,39 @@
+{
+	"extensionName": {
+		"message": "HTTP Listener",
+		"description": "Title of the extension"
+	},
+	"extensionDescription": {
+		"message": "Listen to all HTTP, HTTPS, and AJAX requests"
+	},
+	"dir": {
+		"message": "ltr"
+	},
+	"filterByUrl": {
+		"message": "Filter By Url"
+	},
+	"start": {
+		"message": "Start"
+	},
+	"stop": {
+		"message": "Stop"
+	},
+	"clear": {
+		"message": "Clear"
+	},
+	"type": {
+		"message": "Type"
+	},
+	"method": {
+		"message": "Method"
+	},
+	"url": {
+		"message": "Url"
+	},
+	"runButton": {
+		"message": "Run"
+	},
+	"closeButton": {
+		"message": "Close"
+	}
+}

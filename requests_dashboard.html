@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet">
+		<link href="icons.css" rel="stylesheet">
+		<link href="material.min.css" rel="stylesheet">
+		<script src="material.min.js"></script>
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="script.js"></script>
+		<title>HTTP Listener Dashboard</title>
+	</head>
+	<body>
+		<header>
+			<div class="mdl-shadow--2dp">
+				<span>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="urlFilter">
+						<label class="mdl-textfield__label" for="urlFilter" data-translate="filterByUrl"></label>
+					</div>
+				</span>
+				<i class="vr"></i>
+				<span>
+					<button id="recordButton" class="mdl-button mdl-js-button mdl-button--raised"></button>
+				</span>
+				<i class="vr"></i>
+				<span>
+					<button id="clearButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-translate="clear"></button>
+				</span>
+				<i class="vr"></i>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo1">
+					<input type="checkbox" id="fo1" class="mdl-checkbox__input" checked>
+					<span class="mdl-checkbox__label">Document</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo2">
+					<input type="checkbox" id="fo2" class="mdl-checkbox__input" checked>
+					<span class="mdl-checkbox__label">XHR</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo3">
+					<input type="checkbox" id="fo3" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Js</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo4">
+					<input type="checkbox" id="fo4" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Css</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo5">
+					<input type="checkbox" id="fo5" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Image</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo6">
+					<input type="checkbox" id="fo6" class="mdl-checkbox__input" checked>
+					<span class="mdl-checkbox__label">Other</span>
+				</label>
+				<i class="vr"></i>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo7">
+					<input type="checkbox" id="fo7" class="mdl-checkbox__input" checked>
+					<span class="mdl-checkbox__label">Get</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo8">
+					<input type="checkbox" id="fo8" class="mdl-checkbox__input" checked>
+					<span class="mdl-checkbox__label">Post</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="fo9">
+					<input type="checkbox" id="fo9" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Other</span>
+				</label>
+			</div>
+		</header>
+		<main>
+			<aside>
+				<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+					<thead>
+						<tr>
+							<th class="mdl-data-table__cell--non-numeric" data-translate="type"></th>
+							<th class="mdl-data-table__cell--non-numeric" data-translate="method"></th>
+							<th class="mdl-data-table__cell--non-numeric" data-translate="url"></th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</aside>
+			<content>
+				<div class="mdl-shadow--2dp">
+					<div id="content-table">
+						<div>
+							<div id="frameIdName"><div>Frame Id</div></div>
+							<div id="initiatorName"><div>Initiator</div></div>
+							<div id="methodName"><div>Method</div></div>
+							<div id="parentFrameIdName"><div>Parent Frame Id</div></div>
+							<div id="requestBodyName"><div>Request Body</div></div>
+							<div id="requestIdName"><div>Request Id</div></div>
+							<div id="tabIdName"><div>Tab Id</div></div>
+							<div id="timeStampName"><div>Time Stamp</div></div>
+							<div id="typeName"><div>Type</div></div>
+							<div id="urlName"><div>Url</div></div>
+						</div>
+						<div>
+							<div id="frameId"><div></div></div>
+							<div id="initiator"><div></div></div>
+							<div id="method"><div></div></div>
+							<div id="parentFrameId"><div></div></div>
+							<div id="requestBody"><div></div></div>
+							<div id="requestId"><div></div></div>
+							<div id="tabId"><div></div></div>
+							<div id="timeStamp"><div></div></div>
+							<div id="type"><div></div></div>
+							<div id="url"><div></div></div>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<button id="runButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-translate="runButton"></button>
+					</div>
+					<div>
+						<button id="closeButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-translate="closeButton"></button>
+					</div>
+					<hr>
+					<div>
+						<pre id="runContainer"></pre>
+					</div>
+				</div>
+			</content>
+		</main>
+	</body>
+</html>

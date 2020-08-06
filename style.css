@@ -1,0 +1,144 @@
+html {
+	direction: __MSG_dir__;
+}
+
+body {
+	margin: 0px;
+	display: inline-block;
+}
+
+header {
+	padding: 16px 16px 0px;
+}
+
+header > div {
+	height: 67px;
+	padding: 0px 16px;
+	overflow: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+header > div .vr {
+	height: 100%;
+	border: 0px;
+	border-left: 1px solid #ccc;
+	width: 1px;
+	display: inline-block;
+	margin: 0 1em;
+}
+
+header > div > label.mdl-checkbox {
+	margin: 4px;
+}
+
+main {
+	display: -ms-grid !important;
+	display: grid !important;
+	-ms-grid-columns: minmax(0px, 1fr) 16px minmax(0px, 1fr) 16px minmax(0px, 1fr);
+	grid-template-columns: repeat(3, minmax(0px, 1fr));
+	    grid-template-areas: "aside content content";
+	grid-gap: 16px;
+	margin: 16px;
+	height: calc(100vh - 115px);
+}
+
+aside {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	width: 100%;
+	display: inline-block;
+	grid-area: aside;
+	background: white;
+}
+
+aside > table {
+	min-height: 100%;
+	max-height: calc(100vh - 115px);
+	display: block;
+	overflow: auto;
+}
+
+aside > table tr {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+aside > table > tbody > tr {
+	cursor: pointer;
+}
+
+content {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+	-ms-grid-column-span: 3;
+	display: inline-block;
+	grid-area: content;
+	background: white;
+}
+
+content > div {
+	min-height: 100%;
+	max-height: calc(100vh - 115px);
+	display: block;
+	overflow: auto;
+	border: 1px solid rgba(0,0,0,.12);
+}
+
+content > div > div {
+	margin: 16px;
+	display: inline-block;
+}
+
+content > div > hr {
+	margin: 0px;
+}
+
+#content-table {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	border: 1px solid rgba(0,0,0,.12);
+	max-width: -webkit-fit-content;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
+}
+
+#content-table > div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+#content-table > div > div > div {
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	white-space: pre;
+	font-family: monospace;
+}
+
+#content-table > div > div {
+	padding: 8px;
+	font-size: 14px;
+	min-height: 20px;
+	border: 1px solid rgba(0,0,0,.12);
+	overflow: auto;
+}
+
+#runContainner {
+	border: 2px solid rgba(0,0,0,.12);
+}

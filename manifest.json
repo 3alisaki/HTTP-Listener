@@ -1,0 +1,26 @@
+{
+	"name": "__MSG_extensionName__",
+	"description": "__MSG_extensionDescription__",
+	"default_locale": "en",
+	"version": "1.0",
+	"permissions": ["webRequest", "<all_urls>"],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"browser_action": {
+		"default_icon": {
+			"16": "images/icon16.png",
+			"32": "images/icon32.png",
+			"48": "images/icon48.png",
+			"128": "images/icon128.png"
+		}
+	},
+	"icons": {
+		"16": "images/icon16.png",
+		"32": "images/icon32.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+	"manifest_version": 2
+}

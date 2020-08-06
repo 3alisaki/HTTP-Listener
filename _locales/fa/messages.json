@@ -1,0 +1,39 @@
+{
+	"extensionName": {
+		"message": "HTTP Listener",
+		"description": "Title of the extension"
+	},
+	"extensionDescription": {
+		"message": "گوش دادن به تمام درخواست های HTTP ، HTTPS و AJAX "
+	},
+	"dir": {
+		"message": "rtl"
+	},
+	"filterByUrl": {
+		"message": "فیلتر بر اساس آدرس"
+	},
+	"start": {
+		"message": "شروع"
+	},
+	"stop": {
+		"message": "توقف"
+	},
+	"clear": {
+		"message": "تمیز کردن"
+	},
+	"type": {
+		"message": "نوع"
+	},
+	"method": {
+		"message": "روش"
+	},
+	"url": {
+		"message": "پیوند"
+	},
+	"runButton": {
+		"message": "اجرا کن"
+	},
+	"closeButton": {
+		"message": "بستن"
+	}
+}
